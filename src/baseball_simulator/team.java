@@ -1,8 +1,15 @@
 package baseball_simulator;
 
 public class team {
-	private String name;
-	private int score;
-	private batter Batters[];
+	public String name;
+	public int score;
+	public batter[] Batters;
+	public int nextBatter;
+	
+	public team(String name, batter[] Batters) {
+		this.name = name;
+		this.score = 0;
+		this.Batters = Batters;
+	}
 }
 
